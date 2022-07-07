@@ -25,7 +25,7 @@ jobs:
       - image: circleci/node:13.8.0
     step:
       - checkout
-      - run: exit 1
+      - run: return 1
           name: failure
           command: echo "your job failed"
           when: on_fail
